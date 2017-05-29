@@ -1,0 +1,11 @@
+	
+<!--directive foundItems.html; list names, description and delete button-->
+   
+   <br></br>
+    <ul>
+        <li ng-repeat='item in list.found'>
+        {{item.short_name}}, {{item.name}}, {{item.description}}
+           <button ng-click='list.onRemove({index:$index})'> Click To Delete </button>
+        </li>
+    </ul>
+
